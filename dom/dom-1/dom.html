@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>website</title>
+    </head>
+    <body>
+        <h1 id="123" class="firstClass">Aashiv</h1>
+        <script>
+            let a=document.getElementById("123");
+               a.innerHTML='Bot';
+               //read-get 
+               console.log(a);
+               console.log(a.id); //if we want to nkow the id
+               console.log(a.class);//undefined
+               //for class name use className
+               console.log(a.className); //firstClass
+               //for attribute we need to pass which attribute we need
+               console.log(a.getAttribute("id"));
+               //for inner content
+               console.log(a.innerHTML);
+
+               //create-set ,it will always overright
+               console.log(a.setAttribute("id",998));
+                //this has updated the id from 123 to 998
+                //class="firstClass more"
+                //firstClass is different & more is different
+                console.log(a.setAttribute("class","firstClass secondClass"))
+         </script>
+    </body>
+</html>
+
+<!--CRUD -best way to access and update(R,u) html is innerHTML-->
+
